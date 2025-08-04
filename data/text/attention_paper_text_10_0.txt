@@ -1,0 +1,9 @@
+[5] Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Fethi Bougares, Holger Schwenk,
+and Yoshua Bengio. Learning phrase representations using rnn encoder-decoder for statistical
+machine translation. CoRR, abs/1406.1078, 2014.
+[6] Francois Chollet. Xception: Deep learning with depthwise separable convolutions. arXiv
+preprint arXiv:1610.02357, 2016.
+[7] Junyoung Chung, Çaglar Gülçehre, Kyunghyun Cho, and Yoshua Bengio. Empirical evaluation
+of gated recurrent neural networks on sequence modeling. CoRR, abs/1412.3555, 2014.
+[8] Chris Dyer, Adhiguna Kuncoro, Miguel Ballesteros, and Noah A. Smith. Recurrent neural
+network grammars. In Proc. of NAACL, 2016.

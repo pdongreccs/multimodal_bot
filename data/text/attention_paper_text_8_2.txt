@@ -1,0 +1,7 @@
+checkpoint averaging. We present these results in Table 3.
+In Table 3 rows (A), we vary the number of attention heads and the attention key and value dimensions,
+keeping the amount of computation constant, as described in Section 3.2.2. While single-head
+attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.
+In Table 3 rows (B), we observe that reducing the attention key size dk hurts model quality. This
+suggests that determining compatibility is not easy and that a more sophisticated compatibility
+function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected,

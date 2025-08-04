@@ -1,0 +1,9 @@
+of
+1
+√dk . Additive attention computes the compatibility function using a feed-forward network with
+a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is
+much faster and more space-efficient in practice, since it can be implemented using highly optimized
+matrix multiplication code.
+While for small values of dk the two mechanisms perform similarly, additive attention outperforms
+dot product attention without scaling for larger values of dk [3]. We suspect that for large values of
+dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has

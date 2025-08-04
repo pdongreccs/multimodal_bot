@@ -1,0 +1,18 @@
+output values. These are concatenated and once again projected, resulting in the final values, as
+depicted in Figure 2.
+Multi-head attention allows the model to jointly attend to information from different representation
+subspaces at different positions. With a single attention head, averaging inhibits this.
+MultiHead(Q, K, V ) = Concat(head1, ..., headh)W O
+where headi = Attention(QW Q
+i , KW K
+i , V W V
+i )
+Where the projections are parameter matrices W Q
+i
+∈Rdmodel×dk, W K
+i
+∈Rdmodel×dk, W V
+i
+∈Rdmodel×dv
+and W O ∈Rhdv×dmodel.
+In this work we employ h = 8 parallel attention layers, or heads. For each of these we use

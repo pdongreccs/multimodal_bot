@@ -1,0 +1,9 @@
+age recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern
+Recognition, pages 770–778, 2016.
+[12] Sepp Hochreiter, Yoshua Bengio, Paolo Frasconi, and Jürgen Schmidhuber. Gradient flow in
+recurrent nets: the difficulty of learning long-term dependencies, 2001.
+[13] Sepp Hochreiter and Jürgen Schmidhuber. Long short-term memory. Neural computation,
+9(8):1735–1780, 1997.
+[14] Zhongqiang Huang and Mary Harper. Self-training PCFG grammars with latent annotations
+across languages. In Proceedings of the 2009 Conference on Empirical Methods in Natural
+Language Processing, pages 832–841. ACL, August 2009.

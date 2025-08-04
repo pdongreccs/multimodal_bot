@@ -1,0 +1,4 @@
+To evaluate the importance of different components of the Transformer, we varied our base model
+in different ways, measuring the change in performance on English-to-German translation on the
+5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.
+8

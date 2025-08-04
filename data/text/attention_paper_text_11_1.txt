@@ -1,0 +1,9 @@
+model. In Empirical Methods in Natural Language Processing, 2016.
+[28] Romain Paulus, Caiming Xiong, and Richard Socher. A deep reinforced model for abstractive
+summarization. arXiv preprint arXiv:1705.04304, 2017.
+[29] Slav Petrov, Leon Barrett, Romain Thibaux, and Dan Klein. Learning accurate, compact,
+and interpretable tree annotation. In Proceedings of the 21st International Conference on
+Computational Linguistics and 44th Annual Meeting of the ACL, pages 433–440. ACL, July
+2006.
+[30] Ofir Press and Lior Wolf. Using the output embedding to improve language models. arXiv
+preprint arXiv:1608.05859, 2016.

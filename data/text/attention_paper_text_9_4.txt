@@ -1,0 +1,11 @@
+to investigate local, restricted attention mechanisms to efficiently handle large inputs and outputs
+such as images, audio and video. Making generation less sequential is another research goals of ours.
+The code we used to train and evaluate our models is available at https://github.com/
+tensorflow/tensor2tensor.
+Acknowledgements
+We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful
+comments, corrections and inspiration.
+References
+[1] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint
+arXiv:1607.06450, 2016.
+[2] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly

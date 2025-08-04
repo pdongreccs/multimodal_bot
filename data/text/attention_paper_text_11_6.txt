@@ -1,0 +1,4 @@
+[40] Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu. Fast and accurate
+shift-reduce constituent parsing. In Proceedings of the 51st Annual Meeting of the ACL (Volume
+1: Long Papers), pages 434–443. ACL, August 2013.
+12

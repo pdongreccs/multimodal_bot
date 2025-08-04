@@ -1,0 +1,15 @@
+O(1)
+O(logk(n))
+Self-Attention (restricted)
+O(r · n · d)
+O(1)
+O(n/r)
+3.5
+Positional Encoding
+Since our model contains no recurrence and no convolution, in order for the model to make use of the
+order of the sequence, we must inject some information about the relative or absolute position of the
+tokens in the sequence. To this end, we add "positional encodings" to the input embeddings at the
+bottoms of the encoder and decoder stacks. The positional encodings have the same dimension dmodel
+as the embeddings, so that the two can be summed. There are many choices of positional encodings,
+learned and fixed [9].
+In this work, we use sine and cosine functions of different frequencies:

@@ -1,0 +1,9 @@
+1
+Introduction
+Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks
+in particular, have been firmly established as state of the art approaches in sequence modeling and
+transduction problems such as language modeling and machine translation [35, 2, 5]. Numerous
+efforts have since continued to push the boundaries of recurrent language models and encoder-decoder
+architectures [38, 24, 15].
+Recurrent models typically factor computation along the symbol positions of the input and output
+sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden

@@ -1,0 +1,9 @@
+Advances in Neural Information Processing Systems, 2015.
+[38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang
+Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. Google’s neural machine
+translation system: Bridging the gap between human and machine translation. arXiv preprint
+arXiv:1609.08144, 2016.
+[39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. Deep recurrent models with
+fast-forward connections for neural machine translation. CoRR, abs/1606.04199, 2016.
+[40] Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu. Fast and accurate
+shift-reduce constituent parsing. In Proceedings of the 51st Annual Meeting of the ACL (Volume

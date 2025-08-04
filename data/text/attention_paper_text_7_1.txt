@@ -1,0 +1,27 @@
+GNMT + RL Ensemble [38]
+26.30
+41.16
+1.8 · 1020
+1.1 · 1021
+ConvS2S Ensemble [9]
+26.36
+41.29
+7.7 · 1019
+1.2 · 1021
+Transformer (base model)
+27.3
+38.1
+3.3 · 1018
+Transformer (big)
+28.4
+41.8
+2.3 · 1019
+Residual Dropout
+We apply dropout [33] to the output of each sub-layer, before it is added to the
+sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the
+positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of
+Pdrop = 0.1.
+Label Smoothing
+During training, we employed label smoothing of value ϵls = 0.1 [36]. This
+hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+6

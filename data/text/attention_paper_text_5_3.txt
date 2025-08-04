@@ -1,0 +1,10 @@
+relative positions, since for any fixed offset k, PEpos+k can be represented as a linear function of
+PEpos.
+We also experimented with using learned positional embeddings [9] instead, and found that the two
+versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version
+because it may allow the model to extrapolate to sequence lengths longer than the ones encountered
+during training.
+4
+Why Self-Attention
+In this section we compare various aspects of self-attention layers to the recurrent and convolu-
+tional layers commonly used for mapping one variable-length sequence of symbol representations

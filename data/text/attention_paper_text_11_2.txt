@@ -1,0 +1,9 @@
+2006.
+[30] Ofir Press and Lior Wolf. Using the output embedding to improve language models. arXiv
+preprint arXiv:1608.05859, 2016.
+[31] Rico Sennrich, Barry Haddow, and Alexandra Birch. Neural machine translation of rare words
+with subword units. arXiv preprint arXiv:1508.07909, 2015.
+[32] Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le, Geoffrey Hinton,
+and Jeff Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts
+layer. arXiv preprint arXiv:1701.06538, 2017.
+[33] Nitish Srivastava, Geoffrey E Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdi-

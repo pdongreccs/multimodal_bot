@@ -1,0 +1,7 @@
+length n is smaller than the representation dimensionality d, which is most often the case with
+sentence representations used by state-of-the-art models in machine translations, such as word-piece
+[38] and byte-pair [31] representations. To improve computational performance for tasks involving
+very long sequences, self-attention could be restricted to considering only a neighborhood of size r in
+the input sequence centered around the respective output position. This would increase the maximum
+path length to O(n/r). We plan to investigate this approach further in future work.
+A single convolutional layer with kernel width k < n does not connect all pairs of input and output

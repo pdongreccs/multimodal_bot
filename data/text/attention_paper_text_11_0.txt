@@ -1,0 +1,8 @@
+[25] Mitchell P Marcus, Mary Ann Marcinkiewicz, and Beatrice Santorini. Building a large annotated
+corpus of english: The penn treebank. Computational linguistics, 19(2):313–330, 1993.
+[26] David McClosky, Eugene Charniak, and Mark Johnson. Effective self-training for parsing. In
+Proceedings of the Human Language Technology Conference of the NAACL, Main Conference,
+pages 152–159. ACL, June 2006.
+[27] Ankur Parikh, Oscar Täckström, Dipanjan Das, and Jakob Uszkoreit. A decomposable attention
+model. In Empirical Methods in Natural Language Processing, 2016.
+[28] Romain Paulus, Caiming Xiong, and Richard Socher. A deep reinforced model for abstractive

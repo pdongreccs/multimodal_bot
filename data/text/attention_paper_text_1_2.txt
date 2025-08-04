@@ -1,0 +1,8 @@
+significant improvements in computational efficiency through factorization tricks [21] and conditional
+computation [32], while also improving model performance in case of the latter. The fundamental
+constraint of sequential computation, however, remains.
+Attention mechanisms have become an integral part of compelling sequence modeling and transduc-
+tion models in various tasks, allowing modeling of dependencies without regard to their distance in
+the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms
+are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead

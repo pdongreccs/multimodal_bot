@@ -1,0 +1,6 @@
+predictions for position i can depend only on the known outputs at positions less than i.
+3.2
+Attention
+An attention function can be described as mapping a query and a set of key-value pairs to an output,
+where the query, keys, values, and output are all vectors. The output is computed as a weighted sum
+3

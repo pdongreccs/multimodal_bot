@@ -1,0 +1,7 @@
+constituency parsing. This task presents specific challenges: the output is subject to strong structural
+constraints and is significantly longer than the input. Furthermore, RNN sequence-to-sequence
+models have not been able to attain state-of-the-art results in small-data regimes [37].
+We trained a 4-layer transformer with dmodel = 1024 on the Wall Street Journal (WSJ) portion of the
+Penn Treebank [25], about 40K training sentences. We also trained it in a semi-supervised setting,
+using the larger high-confidence and BerkleyParser corpora from with approximately 17M sentences
+[37]. We used a vocabulary of 16K tokens for the WSJ only setting and a vocabulary of 32K tokens

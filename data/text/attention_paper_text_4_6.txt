@@ -1,0 +1,4 @@
+mation and softmax function to convert the decoder output to predicted next-token probabilities. In
+our model, we share the same weight matrix between the two embedding layers and the pre-softmax
+linear transformation, similar to [30]. In the embedding layers, we multiply those weights by √dmodel.
+5

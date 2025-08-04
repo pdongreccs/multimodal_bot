@@ -1,0 +1,9 @@
+suggests that determining compatibility is not easy and that a more sophisticated compatibility
+function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected,
+bigger models are better, and dropout is very helpful in avoiding over-fitting. In row (E) we replace our
+sinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical
+results to the base model.
+6.3
+English Constituency Parsing
+To evaluate if the Transformer can generalize to other tasks we performed experiments on English
+constituency parsing. This task presents specific challenges: the output is subject to strong structural

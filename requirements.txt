@@ -1,0 +1,18 @@
+# Core Libraries
+boto3
+botocore
+python-dotenv
+numpy
+tqdm
+pillow
+faiss-cpu
+
+# PDF Processing
+PyMuPDF
+tabula-py
+
+# Streamlit App
+streamlit
+
+# LangChain text splitter
+langchain

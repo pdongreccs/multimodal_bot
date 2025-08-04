@@ -1,0 +1,11 @@
+Figure 1: The Transformer - model architecture.
+The Transformer follows this overall architecture using stacked self-attention and point-wise, fully
+connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,
+respectively.
+3.1
+Encoder and Decoder Stacks
+Encoder:
+The encoder is composed of a stack of N = 6 identical layers. Each layer has two
+sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-
+wise fully connected feed-forward network. We employ a residual connection [11] around each of
+the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is

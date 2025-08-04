@@ -1,0 +1,21 @@
+91.3
+McClosky et al. (2006) [26]
+semi-supervised
+92.1
+Vinyals & Kaiser el al. (2014) [37]
+semi-supervised
+92.1
+Transformer (4 layers)
+semi-supervised
+92.7
+Luong et al. (2015) [23]
+multi-task
+93.0
+Dyer et al. (2016) [8]
+generative
+93.3
+increased the maximum output length to input length + 300. We used a beam size of 21 and α = 0.3
+for both WSJ only and the semi-supervised setting.
+Our results in Table 4 show that despite the lack of task-specific tuning our model performs sur-
+prisingly well, yielding better results than all previously reported models with the exception of the
+Recurrent Neural Network Grammar [8].

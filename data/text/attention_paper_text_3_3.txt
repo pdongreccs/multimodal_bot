@@ -1,0 +1,10 @@
+dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has
+extremely small gradients 4. To counteract this effect, we scale the dot products by
+1
+√dk .
+3.2.2
+Multi-Head Attention
+Instead of performing a single attention function with dmodel-dimensional keys, values and queries,
+we found it beneficial to linearly project the queries, keys and values h times with different, learned
+linear projections to dk, dk and dv dimensions, respectively. On each of these projected versions of
+queries, keys and values we then perform the attention function in parallel, yielding dv-dimensional

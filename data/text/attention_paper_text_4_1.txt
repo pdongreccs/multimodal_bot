@@ -1,0 +1,15 @@
+i
+∈Rdmodel×dk, W K
+i
+∈Rdmodel×dk, W V
+i
+∈Rdmodel×dv
+and W O ∈Rhdv×dmodel.
+In this work we employ h = 8 parallel attention layers, or heads. For each of these we use
+dk = dv = dmodel/h = 64. Due to the reduced dimension of each head, the total computational cost
+is similar to that of single-head attention with full dimensionality.
+3.2.3
+Applications of Attention in our Model
+The Transformer uses multi-head attention in three different ways:
+• In "encoder-decoder attention" layers, the queries come from the previous decoder layer,
+and the memory keys and values come from the output of the encoder. This allows every
