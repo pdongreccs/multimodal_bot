@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "locale": "en_US.UTF-8",
+  "locale": "English_United States.1252",
   "metadata": {
     "appmode": "python-streamlit",
-    "entrypoint": "multimodal_bot.py"
+    "entrypoint": "app.py"
   },
   "python": {
     "version": "3.13.5",
@@ -12,19 +12,340 @@
       "version": "25.1.1",
       "package_file": "requirements.txt"
     }
-    },
+  },
   "files": {
-    "multimodal_bot.py": {
-      "checksum": ""
+    "requirements.txt": {
+      "checksum": "5d1780cf72bcb96fb859c468690f375d"
     },
     ".env": {
-      "checksum": ""
+      "checksum": "72393d5de41d08103a62c3cb37164fce"
     },
     ".gitignore": {
-      "checksum": ""
+      "checksum": "60e86309b279e22ac331f3ee72b51620"
     },
-    "requirements.txt": {
-      "checksum": ""
+    "LICENSE": {
+      "checksum": "d229da563da18fe5d58cd95a6467d584"
+    },
+    "app.py": {
+      "checksum": "8cf3484dc873a46b58ec9cce6404a2d2"
+    },
+    "data/attention_paper.pdf": {
+      "checksum": "18e1b007a1dab45b30cc861ba2dfda25"
+    },
+    "data/images/attention_paper_image_2_0_128.png": {
+      "checksum": "e7acc8c9affa037d14c4f99155e2ce94"
+    },
+    "data/images/attention_paper_image_3_0_182.png": {
+      "checksum": "a019f0b6cb686e08c507a3c3a71f8eb4"
+    },
+    "data/images/attention_paper_image_3_1_183.png": {
+      "checksum": "72d15ff88dd8299bfa82e982680caf76"
+    },
+    "data/page_images/attention_paper_page_000.png": {
+      "checksum": "1d0cea9559ae4674812ed0fd34a76140"
+    },
+    "data/page_images/attention_paper_page_001.png": {
+      "checksum": "6aab8810fcc82614d9aa6f6a745abbd1"
+    },
+    "data/page_images/attention_paper_page_002.png": {
+      "checksum": "84b5807064c095a65d325f82889e4876"
+    },
+    "data/page_images/attention_paper_page_003.png": {
+      "checksum": "30275ae5b7c9d19f5d5f179fdfdfb5a9"
+    },
+    "data/page_images/attention_paper_page_004.png": {
+      "checksum": "ca85c459ff72228c2e5c3a927b6b5d55"
+    },
+    "data/page_images/attention_paper_page_005.png": {
+      "checksum": "12fbcdf962a133ee67402d01067490f9"
+    },
+    "data/page_images/attention_paper_page_006.png": {
+      "checksum": "0404c3db1d640942fa8ea858f2f34e8d"
+    },
+    "data/page_images/attention_paper_page_007.png": {
+      "checksum": "b33687c68123cacdacf99554e8747d88"
+    },
+    "data/page_images/attention_paper_page_008.png": {
+      "checksum": "03f9f80273ca8891f01847a1336ef5c1"
+    },
+    "data/page_images/attention_paper_page_009.png": {
+      "checksum": "ac8e3776bdc3d45e61d5150419bcf172"
+    },
+    "data/page_images/attention_paper_page_010.png": {
+      "checksum": "d515c169fd2128245517174f83d847af"
+    },
+    "data/page_images/attention_paper_page_011.png": {
+      "checksum": "e815ff6798016b60232e0ffa3ce41084"
+    },
+    "data/page_images/attention_paper_page_012.png": {
+      "checksum": "797360cb5dd04ffbb1e0f0e3a7038ed0"
+    },
+    "data/page_images/attention_paper_page_013.png": {
+      "checksum": "8e976505da6d5b96e4d03da765004cb6"
+    },
+    "data/page_images/attention_paper_page_014.png": {
+      "checksum": "3f150a7513a74b11c238855f6936f836"
+    },
+    "data/text/attention_paper_text_0_0.txt": {
+      "checksum": "16d0e764a45fccf8b0ade46f3ab8b830"
+    },
+    "data/text/attention_paper_text_0_1.txt": {
+      "checksum": "35ee63a6f4596e3a0a9cf55ba66d6eac"
+    },
+    "data/text/attention_paper_text_0_2.txt": {
+      "checksum": "11f2d9fd9b0614b28e15a3c1c89835ca"
+    },
+    "data/text/attention_paper_text_0_3.txt": {
+      "checksum": "f8904e71841a3b270fa5fcb38ef4de12"
+    },
+    "data/text/attention_paper_text_0_4.txt": {
+      "checksum": "d6f3f32cc45cd588f401e3b3746cbe52"
+    },
+    "data/text/attention_paper_text_0_5.txt": {
+      "checksum": "00583f9c9456deb89de4199d00101c19"
+    },
+    "data/text/attention_paper_text_10_0.txt": {
+      "checksum": "fd2ed32d7f03f757df660206534ca483"
+    },
+    "data/text/attention_paper_text_10_1.txt": {
+      "checksum": "fc7d70928f9417b6bce034385613e690"
+    },
+    "data/text/attention_paper_text_10_2.txt": {
+      "checksum": "c9ab9f470e4957b68fb43f7198ad6f32"
+    },
+    "data/text/attention_paper_text_10_3.txt": {
+      "checksum": "89d98f4561750e26e18eef806786af0c"
+    },
+    "data/text/attention_paper_text_10_4.txt": {
+      "checksum": "4d8446b6bcf81e59d0f1b35d52878799"
+    },
+    "data/text/attention_paper_text_10_5.txt": {
+      "checksum": "b168e0e7adda752aa08a8d542055b41b"
+    },
+    "data/text/attention_paper_text_11_0.txt": {
+      "checksum": "bb90fd3b8e9fc56dccbc171f83c4bb87"
+    },
+    "data/text/attention_paper_text_11_1.txt": {
+      "checksum": "ba4b373373f913f67ef8069accb1b1e6"
+    },
+    "data/text/attention_paper_text_11_2.txt": {
+      "checksum": "45874768e35393a1b566f624d88dce7e"
+    },
+    "data/text/attention_paper_text_11_3.txt": {
+      "checksum": "1ca9b5d7fd4f1e813c40324c6fa41203"
+    },
+    "data/text/attention_paper_text_11_4.txt": {
+      "checksum": "3bc2757c4b27dd5bc2adec84901c3e1a"
+    },
+    "data/text/attention_paper_text_11_5.txt": {
+      "checksum": "efe9f55169e74e1ef44b7b6b9e71208c"
+    },
+    "data/text/attention_paper_text_11_6.txt": {
+      "checksum": "16e88d1dc42906d9f57e5cda3e7d1c11"
+    },
+    "data/text/attention_paper_text_12_0.txt": {
+      "checksum": "a125f9344bda0f89d5172b8ed5df0e42"
+    },
+    "data/text/attention_paper_text_12_1.txt": {
+      "checksum": "7ed2c498da1b294a9b516946157f890d"
+    },
+    "data/text/attention_paper_text_13_0.txt": {
+      "checksum": "d595c262e695ef9a0680da352f60b21c"
+    },
+    "data/text/attention_paper_text_13_1.txt": {
+      "checksum": "39e7b0a86e94564a8cbb4660205a7290"
+    },
+    "data/text/attention_paper_text_14_0.txt": {
+      "checksum": "93f30b419bdfce64ee1b28eef92a7854"
+    },
+    "data/text/attention_paper_text_14_1.txt": {
+      "checksum": "e50c8ebd5e1807ca734d9468187b7a6f"
+    },
+    "data/text/attention_paper_text_1_0.txt": {
+      "checksum": "2d4c08f35a83febbfd6d718f441198cb"
+    },
+    "data/text/attention_paper_text_1_1.txt": {
+      "checksum": "4412d0214fd9dbad11daa75d00e14680"
+    },
+    "data/text/attention_paper_text_1_2.txt": {
+      "checksum": "231db316beca749513e12b323b8bbe40"
+    },
+    "data/text/attention_paper_text_1_3.txt": {
+      "checksum": "aee1856f00804e488756060c353564d2"
+    },
+    "data/text/attention_paper_text_1_4.txt": {
+      "checksum": "cc1da57157aece65f234d9241cae6f30"
+    },
+    "data/text/attention_paper_text_1_5.txt": {
+      "checksum": "b3febe54315f177028ee1cf22393cd04"
+    },
+    "data/text/attention_paper_text_1_6.txt": {
+      "checksum": "fd3b276d91202bd350853dd24a50f175"
+    },
+    "data/text/attention_paper_text_1_7.txt": {
+      "checksum": "3721fb6a3239c6481ec317fdba4d4584"
+    },
+    "data/text/attention_paper_text_1_8.txt": {
+      "checksum": "1c2a5af2fca5ce991991345c1b4ba0be"
+    },
+    "data/text/attention_paper_text_2_0.txt": {
+      "checksum": "e000a95ba2d673d724f8a76de068dbb5"
+    },
+    "data/text/attention_paper_text_2_1.txt": {
+      "checksum": "cd33c0b8bd4e7189ac69735088707812"
+    },
+    "data/text/attention_paper_text_2_2.txt": {
+      "checksum": "d8a3c90f0758d410ba2720f574c014be"
+    },
+    "data/text/attention_paper_text_2_3.txt": {
+      "checksum": "857a006ceedef9cab231052af57f6d41"
+    },
+    "data/text/attention_paper_text_3_0.txt": {
+      "checksum": "cfa4c0d3bdafc9e36a048bb4f8a50687"
+    },
+    "data/text/attention_paper_text_3_1.txt": {
+      "checksum": "7ae13570345debf6ee75772ed787fc87"
+    },
+    "data/text/attention_paper_text_3_2.txt": {
+      "checksum": "fb205858cf0df53d02f155cfd16ee361"
+    },
+    "data/text/attention_paper_text_3_3.txt": {
+      "checksum": "97209b8b98515366796ba68b528f4d25"
+    },
+    "data/text/attention_paper_text_3_4.txt": {
+      "checksum": "664eb3d592c34f07faec97c9132eadbb"
+    },
+    "data/text/attention_paper_text_4_0.txt": {
+      "checksum": "800ebe0469a55532dc42c755595b02c5"
+    },
+    "data/text/attention_paper_text_4_1.txt": {
+      "checksum": "a298d9e25527d94b1f74dc15ca53b733"
+    },
+    "data/text/attention_paper_text_4_2.txt": {
+      "checksum": "cc0fec3bae15ae4225dd256e450df4ef"
+    },
+    "data/text/attention_paper_text_4_3.txt": {
+      "checksum": "841dc4bcb309af4fc28257a0307ccf39"
+    },
+    "data/text/attention_paper_text_4_4.txt": {
+      "checksum": "63459943dfb26e0d2bde218b15d56f44"
+    },
+    "data/text/attention_paper_text_4_5.txt": {
+      "checksum": "ece6b5d8019cc30a879b1ad3bad9604a"
+    },
+    "data/text/attention_paper_text_4_6.txt": {
+      "checksum": "e8e78f72ed9881ec3563f07746e4f05b"
+    },
+    "data/text/attention_paper_text_5_0.txt": {
+      "checksum": "3f867622d762d5dea531813674a74eda"
+    },
+    "data/text/attention_paper_text_5_1.txt": {
+      "checksum": "6d5ac51ef01d5fed71e49992e804b609"
+    },
+    "data/text/attention_paper_text_5_2.txt": {
+      "checksum": "340a7828ecf380cb5c4ba22f0f2a3c82"
+    },
+    "data/text/attention_paper_text_5_3.txt": {
+      "checksum": "790d38d6a5e78c0f46be11d088a47518"
+    },
+    "data/text/attention_paper_text_5_4.txt": {
+      "checksum": "10a878b38b656afce815a131be530d66"
+    },
+    "data/text/attention_paper_text_5_5.txt": {
+      "checksum": "934fb9c354a749925ec14b41eb389309"
+    },
+    "data/text/attention_paper_text_5_6.txt": {
+      "checksum": "8af983f00b60978e66b7d5635a1f86c0"
+    },
+    "data/text/attention_paper_text_6_0.txt": {
+      "checksum": "7add5b384c55894ffbd5b27f8aac1456"
+    },
+    "data/text/attention_paper_text_6_1.txt": {
+      "checksum": "2fd090b01549a9326edcbae4e481e692"
+    },
+    "data/text/attention_paper_text_6_2.txt": {
+      "checksum": "e918e904215ad559c2c7feabeb2b892f"
+    },
+    "data/text/attention_paper_text_6_3.txt": {
+      "checksum": "009ecd927cc485e12fada8f1549f0092"
+    },
+    "data/text/attention_paper_text_6_4.txt": {
+      "checksum": "9f2746726716c4ca1b4260a0ed560a12"
+    },
+    "data/text/attention_paper_text_6_5.txt": {
+      "checksum": "2ec85237870af195fee4d7e778d51ee2"
+    },
+    "data/text/attention_paper_text_6_6.txt": {
+      "checksum": "b26c2fcbce5affbfaf8d0b13389782bc"
+    },
+    "data/text/attention_paper_text_7_0.txt": {
+      "checksum": "e91a72aa17eecd785d81fbf453b6ec40"
+    },
+    "data/text/attention_paper_text_7_1.txt": {
+      "checksum": "89cd309666d313b1578637a619af39db"
+    },
+    "data/text/attention_paper_text_7_2.txt": {
+      "checksum": "ec05f93c1a33499f69fa31e3db870afb"
+    },
+    "data/text/attention_paper_text_7_3.txt": {
+      "checksum": "3c6ac7e270bc0d21fffec120efa490ab"
+    },
+    "data/text/attention_paper_text_7_4.txt": {
+      "checksum": "5d3da02421e432fe9aba4ec9d71d43b0"
+    },
+    "data/text/attention_paper_text_7_5.txt": {
+      "checksum": "e1628d6aefe6670aacec9211e98c2146"
+    },
+    "data/text/attention_paper_text_7_6.txt": {
+      "checksum": "8a75a3db1a384587c5fea9d139c0df9e"
+    },
+    "data/text/attention_paper_text_8_0.txt": {
+      "checksum": "8288a0fa9aa87807b5962dbd3d82408d"
+    },
+    "data/text/attention_paper_text_8_1.txt": {
+      "checksum": "a7894bd4e219bd26a4b8cf22078b73d5"
+    },
+    "data/text/attention_paper_text_8_2.txt": {
+      "checksum": "87f7bc9e765732e71262821546eb851a"
+    },
+    "data/text/attention_paper_text_8_3.txt": {
+      "checksum": "735ae3f94de9ff2ff12278f728cd97c5"
+    },
+    "data/text/attention_paper_text_8_4.txt": {
+      "checksum": "48c400d37fb99fdbe383279431f1a093"
+    },
+    "data/text/attention_paper_text_8_5.txt": {
+      "checksum": "1f800b257d79d69b34d1fbd10a94f5a4"
+    },
+    "data/text/attention_paper_text_9_0.txt": {
+      "checksum": "f01ba90b2eb14ba7ed1cc2d0cf01f4a7"
+    },
+    "data/text/attention_paper_text_9_1.txt": {
+      "checksum": "6fe9f70455ccdf390a5857e7b51caa38"
+    },
+    "data/text/attention_paper_text_9_2.txt": {
+      "checksum": "6e1a614115b9ffc9bebe6c73f0a77902"
+    },
+    "data/text/attention_paper_text_9_3.txt": {
+      "checksum": "159006e20f31e38b4c8f38bcc404f420"
+    },
+    "data/text/attention_paper_text_9_4.txt": {
+      "checksum": "8ae2d980b462d2160b5b19ec569d20f3"
+    },
+    "data/text/attention_paper_text_9_5.txt": {
+      "checksum": "b3ecdce4e52dc83cbb989b7ce90a87e9"
+    },
+    "stored_indices/attention_paper_image.index": {
+      "checksum": "b61e2a042d516352667a9d638b0d3085"
+    },
+    "stored_indices/attention_paper_image.json": {
+      "checksum": "f2f75ed205b2c1a6ea60fd2c2068cb04"
+    },
+    "stored_indices/attention_paper_text.index": {
+      "checksum": "8fe8f0f0bd0c872112d4e39c58fe9490"
+    },
+    "stored_indices/attention_paper_text.json": {
+      "checksum": "daeade065b934da0fb4d3516022adf7e"
     }
   }
 }
