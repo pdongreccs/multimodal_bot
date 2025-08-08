@@ -94,7 +94,7 @@ def load_index(filename, suffix):
 #                 f.write(table_text)
 #             items.append({"page": page_num, "type": "table", "text": table_text, "path": table_file})
 #     except Exception as e:
-#         print(f"⚠️ Error extracting tables from page {page_num}: {str(e)}")
+#         print(f"Error extracting tables from page {page_num}: {str(e)}")
 
 
 def process_text_chunks(text, splitter, page_num, base_dir, items, filename):
@@ -117,20 +117,20 @@ def process_images(page, page_num, base_dir, items, filename):
             file = f"{base_dir}/images/{filename}_image_{page_num}_{idx}_{xref}.png"
             pix.save(file)
             if os.path.getsize(file) == 0:
-                print(f"⚠️ Skipping empty image file: {file}")
+                print(f"Skipping empty image file: {file}")
                 continue
             try:
                 with Image.open(file) as img:
                     img.verify()
             except Exception as e:
-                print(f"⚠️ Skipping invalid image file: {file} — {e}")
+                print(f"Skipping invalid image file: {file} — {e}")
                 continue
             with open(file, 'rb') as f:
                 encoded = base64.b64encode(f.read()).decode('utf8')
             if encoded:
                 items.append({"page": page_num, "type": "image", "path": file, "image": encoded})
         except Exception as e:
-            print(f"⚠️ Error processing image on page {page_num}, index {idx}: {e}")
+            print(f"Error processing image on page {page_num}, index {idx}: {e}")
 
 
 def process_page_images(page, page_num, base_dir, items, filename):
@@ -141,20 +141,20 @@ def process_page_images(page, page_num, base_dir, items, filename):
         file = os.path.join(base_dir, f"page_images/{filename}_page_{page_num:03d}.png")
         pix.save(file)
         if os.path.getsize(file) == 0:
-            print(f"⚠️ Skipping empty page image: {file}")
+            print(f"Skipping empty page image: {file}")
             return
         try:
             with Image.open(file) as img:
                 img.verify()
         except Exception as e:
-            print(f"⚠️ Skipping invalid page image: {file} — {e}")
+            print(f"Skipping invalid page image: {file} — {e}")
             return
         with open(file, 'rb') as f:
             image_b64 = base64.b64encode(f.read()).decode("utf-8")
         if image_b64:
             items.append({"page": page_num, "type": "page", "path": file, "image": image_b64})
     except Exception as e:
-        print(f"⚠️ Error processing full-page image on page {page_num}: {e}")
+        print(f"Error processing full-page image on page {page_num}: {e}")
 
 
 # def process_uploaded_pdf(pdf_file, base_dir="data"):
@@ -324,7 +324,7 @@ def invoke_claude3_sonnet_with_images(prompt, matched_items, chat_history=None):
                 })
             
             except Exception as e:
-                print(f"⚠️ Skipping bad image (page {item.get('page', '?')}): {e}")
+                print(f"Skipping bad image (page {item.get('page', '?')}): {e}")
                 continue
 
     # Add the user prompt
@@ -334,7 +334,7 @@ def invoke_claude3_sonnet_with_images(prompt, matched_items, chat_history=None):
     # Validate: at least one meaningful text block must be present
     valid_text_blocks = [b for b in blocks if b["type"] == "text" and b["text"].strip()]
     if not valid_text_blocks:
-        print("❌ No valid text content available for Claude API.")
+        print("No valid text content available for Claude API.")
         return "Sorry, no valid context could be used to answer your question."
 
     # Claude API call payload
@@ -355,7 +355,7 @@ def invoke_claude3_sonnet_with_images(prompt, matched_items, chat_history=None):
         result = json.loads(response["body"].read())
         return result["content"][0]["text"]
     except Exception as e:
-        print("❌ Claude API invocation failed:", e)
+        print("Claude API invocation failed:", e)
         return "Error occurred while generating the answer. Please try again."
 
 # === Query Handling ===
@@ -388,8 +388,8 @@ def answer_query(query, text_items, image_items, text_index, image_index, chat_h
     return invoke_claude3_sonnet_with_images(query, matched, chat_history)
 
 # === Streamlit UI ===
-st.set_page_config(page_title="📄 Multimodal PDF Chatbot")
-st.title("📄 Multimodal PDF Q&A Assistant")
+st.set_page_config(page_title="Multimodal PDF Chatbot")
+st.title("Multimodal PDF Q&A Assistant")
 
 # === Initialize session state ===
 if "pdf_data" not in st.session_state:
@@ -442,11 +442,11 @@ if uploaded_file:
                 "chat_history": []
             }
 
-            # ✅ Switch sidebar to the new PDF
+            # Switch sidebar to the new PDF
             st.session_state.selected_pdf = filename
 
 # === Sidebar PDF Selection ===
-st.sidebar.title("📂 Uploaded PDFs")
+st.sidebar.title("Uploaded PDFs")
 available_pdfs = list(st.session_state.pdf_data.keys())
 if available_pdfs:
     selected_pdf = st.sidebar.radio(
@@ -460,9 +460,9 @@ else:
 
 # === Chat Interface ===
 if selected_data:
-    st.markdown(f"### 💬 Ask about: `{selected_pdf}.pdf`")
+    st.markdown(f"### Ask about: `{selected_pdf}.pdf`")
 
-    if st.button("🧹 Clear Chat"):
+    if st.button("Clear Chat"):
         selected_data["chat_history"] = []
 
     user_input = st.chat_input("Ask a question about the PDF...")
